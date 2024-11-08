@@ -1,5 +1,6 @@
 plugins {
     `kotlin-dsl`
+    id("com.gradle.plugin-publish") version "1.3.+"
 }
 
 group = "ninja.joonas.gradle-tools"
@@ -10,9 +11,14 @@ repositories {
 }
 
 gradlePlugin {
+    website = "http://localhost"
+    vcsUrl = "https://github.com/HardDoer/gradle-tools.git"
     plugins {
         create("githubRepoPlugin") {
             id = "ninja.joonas.gradletools.github-repo"
+            displayName = "github repo plugin"
+            tags = listOf("")
+            description = "Small helper plugin to easily use dependencies hosted in github."
             implementationClass = "ninja.joonas.gradletools.GithubRepoPlugin"
         }
     }
