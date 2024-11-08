@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "ninja.joonas"
+group = "ninja.joonas.gradle-tools"
 version = "1.0.0"
 
 repositories {
