@@ -11,7 +11,7 @@ repositories {
 }
 
 gradlePlugin {
-    website = "http://localhost"
+    website = "https://github.com/HardDoer/gradle-tools.git"
     vcsUrl = "https://github.com/HardDoer/gradle-tools.git"
     plugins {
         create("githubRepoPlugin") {
